@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3mb-gr-7BT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashBg" translatesAutoresizingMaskIntoConstraints="NO" id="ZYv-pa-XB5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEc-zT-R0T">
+                                <rect key="frame" x="80" y="194" width="160" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" image="splashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="UkA-ix-WTQ">
+                                        <rect key="frame" x="46.5" y="0.0" width="67" height="93"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="UkA-ix-WTQ" secondAttribute="height" multiplier="13:18" id="gPT-NV-5Tb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kty-qu-cxb">
+                                        <rect key="frame" x="-3" y="140.5" width="166.5" height="59.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6r8-Xi-Yqy">
+                                                <rect key="frame" x="34" y="0.0" width="98.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ultra Voucher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0T-Sp-0LS">
+                                                <rect key="frame" x="0.0" y="28" width="166.5" height="31.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="UkA-ix-WTQ" firstAttribute="top" secondItem="QEc-zT-R0T" secondAttribute="top" id="1qm-Mn-NSF"/>
+                                    <constraint firstItem="UkA-ix-WTQ" firstAttribute="centerX" secondItem="QEc-zT-R0T" secondAttribute="centerX" id="Zf4-86-1QT"/>
+                                    <constraint firstAttribute="bottom" secondItem="kty-qu-cxb" secondAttribute="bottom" id="pxA-Qp-unz"/>
+                                    <constraint firstAttribute="height" constant="200" id="s9r-0X-BV2"/>
+                                    <constraint firstItem="kty-qu-cxb" firstAttribute="centerX" secondItem="QEc-zT-R0T" secondAttribute="centerX" id="tnl-ai-Vf4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QEc-zT-R0T" firstAttribute="centerX" secondItem="3mb-gr-7BT" secondAttribute="centerX" id="0ZW-G8-tBw"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ZYv-pa-XB5" secondAttribute="bottom" id="3LO-Jq-VhM"/>
+                            <constraint firstAttribute="trailing" secondItem="ZYv-pa-XB5" secondAttribute="trailing" id="4Lh-Op-S8z"/>
+                            <constraint firstItem="QEc-zT-R0T" firstAttribute="width" secondItem="3mb-gr-7BT" secondAttribute="width" multiplier="0.5" id="Bg7-Lo-Yo9"/>
+                            <constraint firstItem="QEc-zT-R0T" firstAttribute="centerY" secondItem="3mb-gr-7BT" secondAttribute="centerY" constant="10" id="Sdd-eQ-eOC"/>
+                            <constraint firstItem="ZYv-pa-XB5" firstAttribute="leading" secondItem="3mb-gr-7BT" secondAttribute="leading" id="Vow-sz-KP3"/>
+                            <constraint firstItem="ZYv-pa-XB5" firstAttribute="top" secondItem="3mb-gr-7BT" secondAttribute="top" id="hVB-EK-EGP"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splashBg" width="360" height="640"/>
+        <image name="splashLogo" width="67" height="88"/>
+    </resources>
+</document>
